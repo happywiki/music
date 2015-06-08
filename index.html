@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="css/index.css"/>
+</head>
+<body>
+	<div class="main" id="main">
+		<div class="bg">
+			<img id="bg" src="" width="104%"/>
+		</div>
+		<div class="picture">
+			<div class="pic-box">
+				<div class="pic" id="pic"></div>
+			</div>
+			<div class="song">
+				<h2 id="music_name">歌名</h2>
+				<h4 id="artist_name">歌手</h4>
+			</div>
+		</div>
+		<div class="lyrics">
+			<div class="lyric" id="lyric">
+				<li>html5 音乐播放器</li>
+			</div>
+		</div>
+		<div class="workbench">
+			<div class="play_group">
+				<button class="iconfont switchover" id="prev" title="上一曲">&#xe603;</button>
+				<button class="iconfont play" id="play" title="播放/暂停">&#xe608;</button>
+				<button class="iconfont switchover" id="next" title="下一曲">&#xe604;</button>
+			</div>
+			<div class="circulation_group">
+				<li>
+					<i class="iconfont">&#xe607;</i>
+					<div class="volume_bar" id="volume_bar">
+						<div class="volume_now" id="volume_now" style="width: 80%;">
+							<div class="shank"></div>
+							<div class="volume_num" id="volume_num">80%</div>
+						</div>
+					</div>
+				</li>
+				<li class="circulation active" name="circulation" title="列表循环" id = "list"><i class="iconfont">&#xe609;</i></li>
+				<li class="circulation" title="单曲循环" name="circulation" id = "repeat"><i class="iconfont">&#xe601;</i></li>
+				<li class="circulation" title="随机播放" name="circulation" id = "shuffle"><i class="iconfont">&#xe602;</i></li>
+				<div class="clear"></div>
+			</div>
+			<div class="bar" id="progress_bar">
+				<div class="buffer" id="buffer" style="width: 0%;"></div>
+				<div class="loading" id="loading" style="width: 0%;"></div>
+			</div>
+			<div class="time" id="time">00:00&nbsp;/&nbsp;00:00</div>
+		</div>
+	</div>
+	<audio src="music/paomo.mp3" id="audio"></audio>
+	
+	<script src="js/jquery-1.11.1.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/analysisLRC.js" type="text/javascript" charset="utf-8"></script>
+	<script type="text/javascript" src="js/musicSource.js" ></script>
+	<script src="js/common.js" type="text/javascript" charset="utf-8"></script>
+</body>
+</html>
